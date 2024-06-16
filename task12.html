@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <style>
+    body {
+      background-color: #872657;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+ 	  display:flex;
+  	  justify-content: center;
+      background-color: #720425;
+      padding: 40px ;
+  	  padding-top:30px;
+      border-radius: 2px;
+      width:500px;
+      height:400px;
+      color:white;
+      font-family: Arial, sans-serif;
+      margin-left: auto; 
+      margin-right: auto; 
+    }
+    label{
+      color:white;
+    }
+    label{
+	  width:150px;
+	  display:inline-block;
+    }
+    input[type=submit] {
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px 20px;
+      margin: 12px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size:16px;
+    }
+   </style>
+  </head>
+  <body>
+    <div class="container" style="font-family: 'Arial' ">
+      <form action="/action_page.php">
+        <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="your name"></input><br><br>
+
+        <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="your email"></input><br><br>
+
+        <label for="password">Password:</label>
+          <input type="password" id="password" name="password"></input><br><br>
+
+        <label for="phone">Phone Number:</label>
+          <input type="number" id="phone" name="phone"></input><br><br>
+        <div style="color:white">
+          <label for="gender">Gender:</label>
+          Male:<input  type="radio" id="male" name="gender" value="male"> </input>
+          Female:<input  type="radio" id="female" name="gender" value="female"> </input>
+          Other:<input  type="radio" id="other" name="gender" value="other"> </input><br><br>
+        </div>
+        <label for="language">Language:</label>
+        <select id="language" name="language">
+          <option value="">Select language</option>
+          <option value="">English</option>
+          <option value="">Hindi</option>
+          <option value="">Telugu</option>
+          <option value="">Spanish</option>
+        </select><br><br>
+
+        <label for="zip">Zip Code:</label>
+         <input type="text" id="zip" name="zip"></input><br><br>
+        <div>
+         <table>
+           <tr>
+             <td><label for="about">About:</label></td>
+
+             <td><textarea rows="3" id="about" name="about" placeholder="Write about yourself..";"></textarea></td>
+           </tr>
+         </table>
+        </div><br>
+
+        <input  type="submit" value="Register"></input>
+      </form>
+    </div>
+  </body>
+</html>

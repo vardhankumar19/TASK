@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div.mycontainer {
+            width: 100%;
+            overflow: auto;
+        }
+        div.mycontainer div {
+            width: 50%;
+            float: left;
+        }
+        .hori ul{
+            list-style-type: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            overflow: hidden;
+            background-color: darkgray;
+            display: inline;
+        }
+        .hori li{
+            display: inline;
+        }
+        .hori li a {
+            color: blue;
+            padding: 10px 20px;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .hori li a:hover {
+            color: white;
+            background-color: gray;
+        } 
+        table, tr, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+        }
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 190px;
+            background-color: lightblue;
+        }
+        li a:hover {
+            color: white;
+            background-color: orange;
+        }
+        li a {
+            color: blue;
+            padding: 10px 20px;
+            display: block;
+            text-decoration: none;
+        }
+    </style>    
+</head>
+<body>
+    <div class="mycontainer">
+        <div>
+            <table>
+                <caption><h3 style="color:black">Vertical Navigation Bar</h3></caption>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href="https://ethnus.com/">Home</a></li>
+                            <li><a href="https://www.java.com/en/">Java</a></li>
+                            <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+                            <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>  
+        <div class="hori">
+            <table>
+                <caption><h3 style="color:black">Horizontal Navigation Bar</h3></caption>
+                <tr>
+                    <td>
+                        <ul>
+                            <li><a href="https://ethnus.com/">Home</a></li>
+                            <li><a href="https://www.java.com/en/">Java</a></li>
+                            <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+                            <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+                            <li><a href="https://getbootstrap.com/">Bootstrap</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
